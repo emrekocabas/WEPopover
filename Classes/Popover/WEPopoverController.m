@@ -372,7 +372,7 @@ static BOOL OSVersionIsAtLeast(float version) {
     } else {
         UIWindow *w = [[UIApplication sharedApplication] keyWindow];
         if (w.subviews.count > 0) {
-            return [w.subviews objectAtIndex:0];
+            return [w.subviews lastObject];
         } else {
             return w;
         }    
